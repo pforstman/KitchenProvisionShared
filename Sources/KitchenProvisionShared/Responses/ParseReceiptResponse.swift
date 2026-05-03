@@ -1,7 +1,7 @@
 public struct ParseReceiptResponse: Codable, Sendable {
-    public var items: [ParsedLineItem]
+    public var receipt: ParsedReceipt
 
-    public init(items: [ParsedLineItem]) {
-        self.items = items
+    public init(receipt: ParsedReceipt) {
+        self.receipt = receipt
     }
 }
