@@ -8,8 +8,9 @@ public struct ParsedRecipeIngredient: Codable, Sendable, Identifiable {
     public var preparation: String?
     public var sectionName: String?
     public var order: Int?
+    public var aisle: String?
 
-    public init(id: UUID = UUID(), ingredientName: String, quantity: Double, unit: MeasurementUnit, preparation: String? = nil, sectionName: String? = nil, order: Int? = nil) {
+    public init(id: UUID = UUID(), ingredientName: String, quantity: Double, unit: MeasurementUnit, preparation: String? = nil, sectionName: String? = nil, order: Int? = nil, aisle: String? = nil) {
         self.id = id
         self.ingredientName = ingredientName
         self.quantity = quantity
@@ -17,5 +18,6 @@ public struct ParsedRecipeIngredient: Codable, Sendable, Identifiable {
         self.preparation = preparation
         self.sectionName = sectionName
         self.order = order
+        self.aisle = aisle
     }
 }

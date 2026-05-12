@@ -9,8 +9,9 @@ public struct ParsedLineItem: Codable, Sendable, Identifiable {
     public var price: Double?
     public var location: String?
     public var estimatedExpiryDays: Int?
+    public var aisle: String?
 
-    public init(id: UUID = UUID(), ingredientName: String, quantity: Double, unit: MeasurementUnit, rawText: String? = nil, price: Double? = nil, location: String? = nil, estimatedExpiryDays: Int? = nil) {
+    public init(id: UUID = UUID(), ingredientName: String, quantity: Double, unit: MeasurementUnit, rawText: String? = nil, price: Double? = nil, location: String? = nil, estimatedExpiryDays: Int? = nil, aisle: String? = nil) {
         self.id = id
         self.ingredientName = ingredientName
         self.quantity = quantity
@@ -19,5 +20,6 @@ public struct ParsedLineItem: Codable, Sendable, Identifiable {
         self.price = price
         self.location = location
         self.estimatedExpiryDays = estimatedExpiryDays
+        self.aisle = aisle
     }
 }
