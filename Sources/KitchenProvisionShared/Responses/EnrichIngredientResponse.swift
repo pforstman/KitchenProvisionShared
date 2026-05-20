@@ -5,6 +5,7 @@ public struct EnrichIngredientResponse: Codable, Sendable {
     public var aliases: [String]
     public var density: Double?
     public var isLiquid: Bool
+    public var aisle: String?
 
     public init(
         isRecognized: Bool,
@@ -12,7 +13,8 @@ public struct EnrichIngredientResponse: Codable, Sendable {
         canonicalName: String? = nil,
         aliases: [String] = [],
         density: Double? = nil,
-        isLiquid: Bool = false
+        isLiquid: Bool = false,
+        aisle: String? = nil
     ) {
         self.isRecognized = isRecognized
         self.confidence = confidence
@@ -20,5 +22,6 @@ public struct EnrichIngredientResponse: Codable, Sendable {
         self.aliases = aliases
         self.density = density
         self.isLiquid = isLiquid
+        self.aisle = aisle
     }
 }
