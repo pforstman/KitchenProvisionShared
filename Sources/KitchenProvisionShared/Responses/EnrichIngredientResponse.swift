@@ -1,4 +1,5 @@
 public struct EnrichIngredientResponse: Codable, Sendable {
+    public var inputName: String
     public var isRecognized: Bool
     public var confidence: String
     public var canonicalName: String?
@@ -8,6 +9,7 @@ public struct EnrichIngredientResponse: Codable, Sendable {
     public var aisle: String?
 
     public init(
+        inputName: String,
         isRecognized: Bool,
         confidence: String,
         canonicalName: String? = nil,
@@ -16,6 +18,7 @@ public struct EnrichIngredientResponse: Codable, Sendable {
         isLiquid: Bool = false,
         aisle: String? = nil
     ) {
+        self.inputName = inputName
         self.isRecognized = isRecognized
         self.confidence = confidence
         self.canonicalName = canonicalName
