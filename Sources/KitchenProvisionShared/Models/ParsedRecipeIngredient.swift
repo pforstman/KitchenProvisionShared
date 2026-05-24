@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ParsedRecipeIngredient: Codable, Sendable, Identifiable {
+public struct ParsedRecipeIngredient: Codable, Equatable, Sendable, Identifiable {
     public var id: UUID
     public var ingredientName: String
     public var quantity: Double

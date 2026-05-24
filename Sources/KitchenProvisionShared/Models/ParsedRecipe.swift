@@ -1,4 +1,4 @@
-public struct ParsedRecipe: Codable, Sendable {
+public struct ParsedRecipe: Codable, Equatable, Sendable {
     public var title: String
     public var ingredients: [ParsedRecipeIngredient]
     public var prepTime: Int?

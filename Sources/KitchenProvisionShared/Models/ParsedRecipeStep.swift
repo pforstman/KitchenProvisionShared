@@ -1,6 +1,6 @@
 import Foundation
 
-public struct ParsedRecipeStep: Codable, Sendable, Identifiable {
+public struct ParsedRecipeStep: Codable, Equatable, Sendable, Identifiable {
     public var id: UUID
     public var order: Int
     public var instruction: String
