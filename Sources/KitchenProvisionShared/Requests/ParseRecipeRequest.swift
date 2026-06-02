@@ -2,6 +2,7 @@ public enum RecipeImportSource: String, Codable, Sendable {
     case url
     case text
     case schemaOrg
+    case image
 }
 
 public struct ParseRecipeRequest: Codable, Sendable {

@@ -2,7 +2,7 @@
 
 Shared Swift package containing DTOs (request/response types and models) used by both the KitchenProvision iOS app and the KitchenProvision backend. No business logic — pure data transfer types.
 
-**Current version: 1.0.11**
+**Current version: 1.0.12**
 
 ## Types
 
@@ -50,7 +50,7 @@ Shared Swift package containing DTOs (request/response types and models) used by
 ### Enums
 
 - `MeasurementUnit` — weight (gram, kilogram, ounce, pound), metric volume (milliliter, liter), US volume (teaspoon, tablespoon, cup, fluidOunce, pint, quart, gallon), count (piece, dozen), approximate (pinch, dash, toTaste)
-- `RecipeImportSource` — `url`, `text`, `schemaOrg`
+- `RecipeImportSource` — `url`, `text`, `schemaOrg`, `image`
 
 ## Versioning
 
