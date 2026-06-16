@@ -2,7 +2,7 @@
 
 Shared Swift package containing DTOs (request/response types and models) used by both the KitchenProvision iOS app and the KitchenProvision backend. No business logic — pure data transfer types.
 
-**Current version: 1.0.12**
+**Current version: 1.0.13**
 
 ## Types
 
@@ -38,7 +38,7 @@ Shared Swift package containing DTOs (request/response types and models) used by
 
 | Type | Fields |
 |------|--------|
-| `MealSuggestion` | `id: UUID`, `name`, `description?`, `matchingIngredientCount?`, `ingredients: [ParsedRecipeIngredient]` |
+| `MealSuggestion` | `id: UUID`, `name`, `description?`, `matchingIngredientCount?`, `ingredients: [ParsedRecipeIngredient]`, `steps: [ParsedRecipeStep]?` |
 | `NutritionIngredient` | `name`, `quantity?`, `unit?` |
 | `PantryItemSnapshot` | `ingredientName?`, `category?`, `quantity`, `unit: MeasurementUnit`, `expiryDate?`, `location?` |
 | `ParsedLineItem` | `id: UUID`, `ingredientName`, `quantity`, `unit`, `rawText?`, `price?`, `location?`, `estimatedExpiryDays?`, `aisle?` |
