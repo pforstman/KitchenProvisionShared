@@ -8,9 +8,11 @@ public enum RecipeImportSource: String, Codable, Sendable {
 public struct ParseRecipeRequest: Codable, Sendable {
     public var source: RecipeImportSource
     public var content: String
+    public var images: [String]? // base64-encoded pages, in capture order
 
-    public init(source: RecipeImportSource, content: String) {
+    public init(source: RecipeImportSource, content: String, images: [String]? = nil) {
         self.source = source
         self.content = content
+        self.images = images
     }
 }
